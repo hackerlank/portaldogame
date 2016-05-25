@@ -1,0 +1,19 @@
+/*# Ma2 WidgetTabs #######################################*/
+.tabsData { padding-bottom:0; margin:0;}
+.tabsData .tab {position:relative; z-index:2; margin-right:3px; background:#385d01; border:1px solid #C4C4C4; border-bottom:0; color:#ddba85; padding:0 0 0 10px; font-size:12px; }
+.tabsData .tab span { padding:0 10px 0 0; line-height:32px; float:left; font-weight: bold;}
+.tabsData .last {}
+.tabsData .active { color:#ddba85; font-weight:bold; z-index:3; border-bottom:0; background:#962913; 
+  /*background-image: -moz-linear-gradient(top, #CDCDCD, #FFFFFF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CDCDCD), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(top, #CDCDCD, #FFFFFF);
+  background-image: -o-linear-gradient(top, #CDCDCD, #FFFFFF);
+  background-image: linear-gradient(to bottom, #CDCDCD, #FFFFFF);
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCDCDCD', endColorstr='#FFFFFFFF', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);*/
+}
+.tabsData .active span {background-position:100% 0; padding-bottom:1px;}
+.tabsData .tab-container {z-index:1; top:33px; background:#1f1c1b;}
+.tabsData .tab-content {padding:1.2em 0 0 0; background:#1f1c1b; /*border:1px solid #CBC9C9;*/ border-top:1px solid #cc0000; font-size:12px;}
+.tabsData .tab-content object,.tabsData .tab-content embed {width:100% !important; height:auto !important;}

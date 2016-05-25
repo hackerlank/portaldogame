@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<widgets>        
+    <widgettabsf type="WidgetTabsF/Widgettabs" module="WidgetTabsF">
+        <name>Ma2 Widget Tabs Free</name>
+        <description>Widget tabs free version from MagenMarket</description>
+        <parameters>                                       
+            <tab_item translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label></label>
+                <type>WidgetTabsF/adminhtml_system_config_form_field_tabitem</type>
+                <sort_order>1</sort_order>
+            </tab_item>                                   
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Select template</label>
+                <type>select</type>
+                <value>ma2_widgettabsf/default.phtml</value>  
+                <values>
+                    <default translate="label">
+                        <value>ma2_widgettabsf/default.phtml</value>
+                        <label>Default Template</label>
+                    </default>            
+                </values>                
+            </template>                                                                     
+        </parameters>
+    </widgettabsf>
+</widgets>

@@ -1,0 +1,85 @@
+
+
+<header id="header" class="page-header new_header">
+
+  <div class="page-header-container">
+<div class="new_topheader">
+  <div class="topbar"><a href="/">Home</a> | <a href="/contactus/">Contact Us</a> | <a href="javascript:window.external.AddFavorite('http://www.portaldogame.com.br', 'portaldogame')">Add to Favorites</a></div>
+  <div class="col-lg-12 mobile-links">
+    <div class="col-lg-4 pull-left">
+      <ul class="list-inline">
+        <li><?php echo $this->getChildHtml('store_language') ?></li>
+        <li><?php echo $this->getChildHtml('currency_switcher') ?></li>
+        <li><?php echo $this->getChildHtml('minicart_head'); ?></li> 
+      </ul>
+    </div>
+    <div class="col-lg-8 pull-right">
+    <ul class="list-inline">
+      <?php Mage::getSingleton('customer/session')->setBeforeAuthUrl($this->getRequest()->getRequestUri());  //save requested URL for later redirection
+
+          if(!Mage::getSingleton('customer/session')->isLoggedIn()) {?>
+
+          <li><?php echo $this->getChildHtml('minilogin'); ?></li>
+
+    <?php }else{ ?>
+
+    <li><a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account"> <span class="icon"></span> <span class="label"><?php echo $this->__('Account'); ?></span></a> </li>
+
+      <?php } ?>
+      
+    </ul>
+    </div>
+    
+  </div>
+  <div class="col-lg-12">
+    <div class="col-sm-7 new-logo text-center">
+      <a class="logo" href="<?php echo $this->getUrl('') ?>"> <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" /> <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" /></a>
+    </div>
+    <div class="col-sm-5 header-right">
+      <div class="col-lg-12">
+        
+         <div class="skip-links col-lg-6"><a href="#header-nav" class="skip-link skip-nav"> <span class="icon"></span> <span class="label"><?php echo $this->__('Menu'); ?></span></a>
+
+        <div class="account-cart-wrapper">
+
+          <div class="header-minicart new_minicart"> <?php echo $this->getChildHtml('minicart_head'); ?> </div>
+
+        </div>
+
+      </div>
+      <div class="store-language-container col-lg-6">
+           <?php echo $this->getChildHtml('store_language') ?> 
+           <?php echo $this->getChildHtml('currency_switcher') ?>
+         </div>
+    </div>
+    <div class="col-lg-12">
+    <?php Mage::getSingleton('customer/session')->setBeforeAuthUrl($this->getRequest()->getRequestUri());  //save requested URL for later redirection
+
+          if(!Mage::getSingleton('customer/session')->isLoggedIn()) {?>
+
+          <?php echo $this->getChildHtml('minilogin'); ?>
+
+    <?php }else{ ?>
+
+    <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account"> <span class="icon"></span> <span class="label"><?php echo $this->__('Account'); ?></span></a> 
+
+      <?php } ?>
+      </div>
+    </div>
+    </div>
+   
+
+  
+    <div class="page-language-container"></div>
+
+    
+</div>
+    <div id="header-nav" class="col-lg-12 skip-content new_headernav"> <?php echo $this->getChildHtml('topMenu') ?> </div>
+
+    <div id="header-account" class="skip-content"> <?php echo $this->getChildHtml('topLinks') ?> </div>
+
+  </div>
+
+</header>
+
+<?php echo $this->getChildHtml('topContainer'); ?>

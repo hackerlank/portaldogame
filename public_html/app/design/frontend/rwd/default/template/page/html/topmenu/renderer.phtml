@@ -1,0 +1,41 @@
+<?php
+$html = '';
+$children = $menuTree->getChildren();
+$parentLevel = $menuTree->getLevel();
+$childLevel = is_null($parentLevel) ? 0 : $parentLevel + 1;
+
+$counter = 1;
+$childrenCount = $children->count();
+
+$parentPositionClass = $menuTree->getPositionClass();
+$itemPositionClassPrefix = $parentPositionClass ? $parentPositionClass . '-' : 'nav-';
+
+foreach ($children as $child) {
+    $child->setLevel($childLevel);
+    $child->setIsFirst($counter == 1);
+    $child->setIsLast($counter == $childrenCount);
+    $child->setPositionClass($itemPositionClassPrefix . $counter);
+
+    $outermostClassCode = 'level'. $childLevel;
+    $_hasChildren = ($child->hasChildren()) ? 'has-children' : '';
+
+    $html.='<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
+    $html.='<a href="javascript:void(0);" class="'.$outermostClassCode.' '.$_hasChildren.'">'.$this->escapeHtml($this->__($child->getName())).'</a>';
+	$CategoryId = (int) ereg_replace('[^0-9]','',$child->getId());
+	
+	$products= Mage::getModel('catalog/category')->load($CategoryId)->getProductCollection();
+    $products->addAttributeToSelect(array('name', 'id', 'price', 'url_key', 'small_image',));
+	$products->addAttributeToFilter('status', 1);
+	$products->addAttributeToFilter('visibility', 4);
+	
+	$html .= '<ul class="level0">';
+	foreach ($products as $key=>$product){
+		$html .='<li class="level1">';
+		$html .='<a href="'.$product->getProductUrl().'" class="level1">'.$product->getName().'</a>';
+		$html .='</li>';
+	}
+	$html .= '</ul>';
+    $html .= '</li>';
+    $counter++;
+}
+return $html;

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <reviews translate="label" module="reviews">
+      <label>Sam Extensions</label>
+      <sort_order>1</sort_order>
+    </reviews>
+  </tabs>
+  <sections>
+    <reviewssection translate="label" module="reviews"><class>separator-top</class>
+      <label>Latest Product Reviews Plus</label>
+      <tab>reviews</tab>
+      <sort_order>130</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <settings translate="label">
+          <label>General</label>
+          <sort_order>10</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>0</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <enabled translate="label">
+              <label>Enabled Product Reviews Plus</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </enabled>
+          </fields>
+          <fields>
+            <recent_reviews translate="label">
+              <label>Show Recent Reviews On</label>
+              <frontend_type>select</frontend_type>
+              <source_model>reviews/sidebar</source_model>
+              <sort_order>4</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </recent_reviews>
+          </fields>
+          <fields>
+            <view_type translate="label">
+              <label>View Type</label>
+              <frontend_type>select</frontend_type>
+			  <source_model>reviews/viewtype</source_model>
+              <sort_order>5</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </view_type>
+          </fields>
+          <fields>
+            <total_recent_reviews translate="label">
+              <label>Total Recent Reviews</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>6</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </total_recent_reviews>
+          </fields>
+          <!--<fields>
+            <review_per_page_default translate="label">
+              <label>Review Per Page Default</label>
+              <frontend_type>text</frontend_type>
+			  <validate>required-entry validate-number</validate>
+              <comment>Default:10</comment>
+              <sort_order>7</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </review_per_page_default>
+          </fields>-->
+		  <fields>
+            <review_per_page_allowed translate="label">
+              <label>Review Per Page Allowed</label>
+              <frontend_type>text</frontend_type>
+              <validate>required-entry</validate>
+			  <comment>Example:5,10,15,20</comment>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </review_per_page_allowed>
+          </fields>
+        </settings>
+      </groups>
+    </reviewssection>
+  </sections>
+</config>

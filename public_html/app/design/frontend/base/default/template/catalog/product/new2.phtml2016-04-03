@@ -1,0 +1,140 @@
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_categories = $this->getCurrentChildCategories() ?>
+  <div class="block-content-quickorder">
+    <dl id="narrow-by-list2">
+      <dt><?php echo $this->__('Ouick Order') ?></dt>
+      <form action="" method="post" id="product_addtocart_form" enctype="multipart/form-data">
+      <dd>
+      	<div class="game">
+      	<label class="required"><em>*</em>Game</label>
+        <select id="s_name" name="s_name" onchange="loadProductHand()"></select> 
+        <div style="clear:both"></div>
+        <div id="product_data"></div> 
+        </div>
+        <div style="clear:both"></div>
+
+        <div class="add-to-cart-wrapper add-to-cart-quick">
+          <div class="add-to-box"> <button type="button" id="product-addtocart-button" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $this->__('Add to Cart'); ?></span></span></button></div>
+        </div>
+        <div id="price"><?php echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol();?><strong>0</strong></div>
+        <div style="clear:both"></div>
+      </dd>
+      </form>
+      <script type="text/javascript">
+        //<![CDATA[
+            var productAddToCartForm = new VarienForm('product_addtocart_form');
+            productAddToCartForm.submit = function(button, url) {
+                if (this.validator.validate()) {
+                    var form = this.form;
+                    var oldUrl = form.action;
+
+                    if (url) {
+                       form.action = url;
+                    }
+                    var e = null;
+                    try {
+                        this.form.submit();
+                    } catch (e) {
+                    }
+                    this.form.action = oldUrl;
+                    if (e) {
+                        throw e;
+                    }
+
+                    if (button && button != 'undefined') {
+                        button.disabled = true;
+                    }
+                }
+            }.bind(productAddToCartForm);
+
+            productAddToCartForm.submitLight = function(button, url){
+                if(this.validator) {
+                    var nv = Validation.methods;
+                    delete Validation.methods['required-entry'];
+                    delete Validation.methods['validate-one-required'];
+                    delete Validation.methods['validate-one-required-by-name'];
+                    // Remove custom datetime validators
+                    for (var methodName in Validation.methods) {
+                        if (methodName.match(/^validate-datetime-.*/i)) {
+                            delete Validation.methods[methodName];
+                        }
+                    }
+
+                    if (this.validator.validate()) {
+                        if (url) {
+                            this.form.action = url;
+                        }
+                        this.form.submit();
+                    }
+                    Object.extend(Validation.methods, nv);
+                }
+            }.bind(productAddToCartForm);
+        //]]>
+        </script>
+      <script type="text/javascript">
+		var $quickorder = jQuery.noConflict();
+		loadServer();
+        function loadServer(){//加载服务器
+			$quickorder("#s_name").empty();
+			$quickorder("#price strong").html('0');
+			getalldata('<?php echo Mage::getBaseUrl() ?>catalog/category/getdata/idd/16');
+        }
+		function getalldata(url){ 
+   			new Ajax.Request(url, {  
+       			method: 'get',//'post'
+        		onCreate :function(){
+					$quickorder("#price strong").html('0');
+					$quickorder("#s_name").html("<option><?php echo $this->__('Loading...') ?></option>");	
+				},
+				onSuccess: function(text) {
+					$quickorder("#s_name").html('');
+            		yourtext = text.responseText.evalJSON(true);
+					$quickorder("#s_name").html(yourtext);
+					loadProduct('<?php echo Mage::getBaseUrl() ?>catalog/category/getProductdata/idd/'+$quickorder("#s_name").val());
+        		}  
+    		});  
+    		return true;
+		}
+		function loadProductHand(){
+			loadProduct('<?php echo Mage::getBaseUrl() ?>catalog/category/getProductdata/idd/'+$quickorder("#s_name").val());
+		}
+		
+		function loadProduct(url){
+			new Ajax.Request(url, {  
+       			method: 'get',//'post'
+				//parameters : {idd:8}
+        		onCreate :function(){
+					$quickorder("#product_data").html('');
+					$quickorder("#product_data").html("<?php echo $this->__('Loading...') ?>");	
+				},
+				onSuccess: function(text) {
+					$quickorder("#product_data").html('');
+					yourtext = text.responseText.evalJSON(true);
+					$quickorder("#product_data").html(yourtext[0]);
+					$quickorder("#product_addtocart_form").attr('action',yourtext[1]);	
+        		}  
+    		});  
+    		return true;
+		}
+		
+		function reloadPrice(){
+			
+			$quickorder(".product-custom-option").each(function(){
+				    $quickorder(this).find('option:selected').attr('selected', 'selected');
+					$price = $quickorder(this).find('option:selected').attr('price');
+					$quickorder("#price strong").html($price);
+			})
+			
+			/*$price = $quickorder(".product-custom-option").find('option:selected').attr('price');
+			$quickorder(".product-custom-option").find('option:selected').attr('selected', 'selected');
+			
+			alert($price);
+			
+			$quickorder("#price strong").html($price);
+			*/
+		}
+        </script>
+         
+    </dl>
+     <div style="clear:both"></div>
+  </div>

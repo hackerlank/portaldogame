@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+	<default>
+
+		<reference name="left" ifconfig="reviewssection/settings/enabled">
+
+			<block type="reviews/latestsidebar" after="content" name="reviews.latestsidebar" template="samreviews/latest-sidebar.phtml" ifconfig="reviewssection/settings/recent_reviews"/>
+
+        </reference>
+
+		<reference name="right" ifconfig="reviewssection/settings/enabled">
+
+			<block type="reviews/latestsidebar" name="reviews.latestsidebar" template="samreviews/latest-sidebar.phtml" unlessconfig="reviewssection/settings/recent_reviews"/>
+
+        </reference>
+
+		<reference name="head" ifconfig="reviewssection/settings/enabled">
+
+			<action method="addCss"><stylesheet>css/samreviews.css</stylesheet></action>
+
+			<!--action method="addItem"><type>skin_js</type><name>js/jquery-1.8.3.min.js</name></action-->
+
+			<action method="addItem"><type>skin_js</type><name>js/samreview.js</name></action>
+
+			<action method="addItem"><type>skin_js</type><name>js/sam.tinyscrollbar.min.js</name></action>
+
+		</reference>
+
+	</default>
+
+    <reviews_index_index>
+
+        <reference name="content" ifconfig="reviewssection/settings/enabled">
+
+            <block type="reviews/latest" name="reviews.latest" template="samreviews/latest.phtml" />
+
+        </reference>
+
+    </reviews_index_index>
+
+</layout>

@@ -1,0 +1,31 @@
+<div class="head-login">
+
+  <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form" class="scaffold-form">
+
+    <div class="block-content  form-group">
+
+      <?php echo $this->getBlockHtml('formkey'); ?>
+      <div class="col-lg-12">
+        <div class="input-group">
+          <!-- <span class="label">Email Address</span> -->
+          <input placeholder="<?php echo $this->__('Email Address'); ?>" type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="login[username]" id="mini-login" class="input-text" />
+        </div>
+        <div class="input-group">
+            <!-- <span class="label">Password</span> -->
+            <input placeholder="<?php echo $this->__('Password'); ?>" type="password" name="login[password]" id="mini-password" class="input-text" />
+        </div> 
+      </div>
+      <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign Up')) ?>" class="button-head" onclick="window.location='<?php echo $this->getCreateAccountUrl() ?>';"><span><?php echo $this->__('Not a member yet?'); ?></span></button>
+      <button type="submit" class="button-head" title="Sign In" name="send" id="send2"><span><?php echo $this->__('Sign In'); ?></span></span></button>
+
+    </div>
+
+  </form>
+
+</div>
+
+<script type="text/javascript">
+
+     var dataForm = new VarienForm('login-form', true);
+
+</script>

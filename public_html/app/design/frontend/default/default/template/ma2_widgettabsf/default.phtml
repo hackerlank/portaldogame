@@ -1,0 +1,25 @@
+<?php $rid = Mage::helper("WidgetTabsF")->randomkeys(16);?>
+<div class="ma2-widgettabs-wrapper">
+<dl id="tabsData<?php echo $rid;?>" class="tabsData">
+<?php foreach($tabsData as $idx => $tab):?>	
+	<dt id="tab_<?php echo $idx.$rid; ?>" class="tab"><span><?php echo $tab['title'];?></span></dt>
+	<dd id="tab_<?php echo $idx.$rid; ?>_contents" class="tab-container">
+		<div class="tab-content">		
+			<?php
+			echo Mage::helper('cms')->getBlockTemplateProcessor()->filter($tab['text']);
+			?>
+		</div>
+	</dd>        
+<?php endforeach;?>       
+</dl>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    var Ma2Tabs<?php echo $rid;?> = new Ma2All.Tabs('tabsData<?php echo $rid;?>');
+    Event.observe(window, 'load', function() {
+        Ma2Tabs<?php echo $rid;?>.select();
+    });
+//]]>
+</script>
+
+

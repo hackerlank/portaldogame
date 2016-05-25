@@ -1,0 +1,3 @@
+<?php
+
+class FacileCheckout_OnestepCheckout_Model_Setup_Mysql4_Setup extends Mage_Eav_Model_Entity_Setup{}

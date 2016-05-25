@@ -1,0 +1,38 @@
+<?php $reviews = $this->getReviews(); ?>
+
+<?php if(count($reviews)) : ?>
+<div class="sam_review_title"><?php echo $this->__('Product Reviews'); ?></div>
+<?php echo $this->getPagerHtml(); ?>
+<div class="sam_review_list">
+	<?php foreach ($reviews->getData() as $review): ?>
+    	<?php $product = Mage::getModel('catalog/product')->load($review['entity_pk_value']);?>
+        <div class="sam_review_item">
+            <div class="sam_review_item_image">
+                <a href="<?php echo $product->getProductUrl();?>" title="<?php echo $product->getName(); ?>"><img src="<?php echo Mage::helper('catalog/image')->init($product, 'image')->resize(120,120)?>" alt="<?php echo $product->getName(); ?>"  /></a>
+            </div>
+            <div class="sam_review_item_info">
+            	<div class="sam_review_item_pname">
+                	<a href="<?php echo $product->getProductUrl();?>" title="<?php echo $product->getName(); ?>">
+                    <?php echo $product->getName();?>
+                    </a>
+                </div>
+                <div class="ratings">
+                	<div class="sam_rating_title"><?php echo $this->__('Ratings:')?></div>
+                    <div class="rating-box">
+                    	<div class="rating" style="width:<?php echo $this->getRatingvote($product->getId());?>%"></div>
+                    </div>
+                    <div class="sam_review_item_clear"></div>
+                </div>
+                <div class="sam_review_item_title"><?php echo $review['title'];?></div>
+                <div class="sam_review_item_detail"><?php echo $review['detail'];?></div>
+                <div class="sam_review_item_nickname"><?php echo $review['nickname']." - ".$this->__('Created at '). $review['created_at'];?></div>
+            </div>
+            <div class="sam_review_item_clear"></div>
+        </div>
+        
+    <?php endforeach; ?>
+</div>
+<?php echo $this->getPagerHtml(); ?>
+<?php else: ?>
+	<p><?php echo $this->__('The collection is empty.'); ?></p>
+<?php endif;?>

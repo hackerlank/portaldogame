@@ -1,0 +1,163 @@
+<div class="widget widget-static-block">
+
+  <h2 class="subtitle">
+
+    <p><?php echo $this->__('All Games') ?></p>
+
+  </h2>
+
+  <div id="leftNavContainer">
+
+    <dl>
+
+      <ol>
+
+		  <?php 
+
+          /*$_categories  = $this->getCurrentCategory()->getChildrenCategories();
+
+		  
+
+          foreach($this->getStoreCategories() as $_category ){
+
+			  $pid = $_category -> getId();
+
+			  $imgurl = Mage::getModel('catalog/category')->load($pid)->getImageUrl();
+
+			  $categoryName = $_category -> getName();
+
+			  $categoryUrl = $this -> getCategoryUrl( $_category );
+
+			  
+
+			  $products= Mage::getModel('catalog/category')->load($pid)->getProductCollection();
+
+    		  $products->addAttributeToSelect(array('name', 'id', 'price', 'url_key', 'small_image',));
+
+			  $products->addAttributeToFilter('status', 1);
+
+			  $products->addAttributeToFilter('visibility', 4);
+
+			  
+
+			  $html = '<li><a href="javascript:void(0);">';
+
+			  if($imgurl){
+
+			  	$html .= '<span><img src='.$imgurl.' width="27" height="22"/></span>';
+
+			  }
+
+			  $html .= $categoryName.'</a>';
+
+			  $html .= '<ul class="laftSubMenu">';
+
+			  foreach ($products as $key=>$product){
+
+			  		$html .='<li><a href="'.$product->getProductUrl().'">'.$product->getName().'</a></li>';
+
+			  }
+
+			  $html .= '</ul>';
+
+			  $html .= '</li>';
+
+			  echo $html;
+
+          }*/
+
+		   $dataArray = array();
+
+		   $collection = Mage::getResourceModel('catalog/product_collection');
+
+		   $collection->addStoreFilter();
+
+		   $collection->addAttributeToSelect(array('name', 'id', 'price', 'url_key', 'small_image',));
+
+		   $collection->addAttributeToFilter('status', 1);
+
+		   $collection->addAttributeToFilter('visibility', 4);
+
+		   foreach ($collection as $product){
+
+			 $_categoryIds = $product->getCategoryIds();
+
+			 //array_push($dataArray, );
+
+			 foreach ($_categoryIds as $_categoryId) {
+
+				 $_category = Mage::getModel('catalog/category')->load($_categoryId);
+
+				  	array_push($dataArray,array('name'=>$product->getName(),'category'=>$_category->getName(),'url'=>$product->getProductUrl()));
+
+				 //$_category_name = $_category->getName();
+
+				 /*$html.= '<ul>'.$_category_name.'</ul>';*/
+
+				 //$dataArray[$iii]=>'aaa';
+
+			 }
+
+		   }
+
+		   
+
+		   $result=array();
+
+		   foreach ($dataArray as $k => $v ) {
+
+				$name=$v['name'];
+
+				unset($v['name']);
+
+				$result[$name]['name']=$name;
+
+				$result[$name]['category'][]=$v;
+
+				//$result[$name]['url'][]=$v;
+
+		   }
+
+		   //print_r($result);
+
+		   foreach($result as $vv){
+
+			  //print_r($vv['name'].'---');
+			  $html = '<li><a href="javascript:void(0)">'.$vv['name']."</a>";
+
+		   	?>
+<span style="display:none">
+
+		   	<?php 
+		   	var_dump($vv['url'])
+		   	?>
+		   	</span>
+
+		   	<?php 
+			  $html .= '<ul class="laftSubMenu">';
+
+			  foreach($vv['category'] as $kk=>$vvv){
+
+				  $html .= '<li><a href="'.$vv['category'][$kk]['url'].'">'.$vv['category'][$kk]['category'].'</a></li>';
+
+			  }
+
+			  $html .= '</ul>';
+
+			  $html .='</li>';
+
+			  echo $html; 
+
+		   }
+
+		   
+
+          ?>
+
+      </ol>
+
+    </dl>
+
+  </div>
+
+</div>

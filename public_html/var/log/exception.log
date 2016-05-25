@@ -1,0 +1,1006 @@
+2016-04-16T13:16:16+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: f9a32b7cb2e39. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:16:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 612c022a7ef29. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:24:56+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 6251206037272. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:30:32+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 5df737713d4c. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:36:58+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: ca8f3cd95774b. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:39:35+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 6f4bdd6695241. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:43:59+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 2df95a98b8409. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:45:17+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: a89d97ec7d847. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', true)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:57:06+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: d53d5b1735a81. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:57:46+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: 339659933bf71. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', true)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T13:58:31+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: f1aa4d53a36e4. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T15:43:03+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: c17be78a6fede. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T15:49:59+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: 9741caa5753e4. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T15:56:44+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address State is required (#10729: Shipping Address State Empty). Correlation ID: 945d19324fe98. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:34:14+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: e5f92edfd1d58. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:39:56+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: ae0e56b32b7e0. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:40:48+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 136bd9abd56c7. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:42:15+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 49661bd9caf8d. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:48:41+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: ce8e767ab5556. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:51:50+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 4fa395c9d90d7. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:54:07+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 38261ec0d59df. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:56:46+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 15241c963076a. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T16:58:13+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: d5e559ba9aeec. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:19:16+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 7e0bcb33b42fe. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:20:27+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 4b3f332fc43da. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:21:00+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 33c1b3c2c311f. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:27:40+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 433ba2ab20519. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:35:13+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 57325613dd599. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:35:52+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: a82f0b619d711. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:38:34+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 3cbfb9948c48d. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:40:36+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: d3ca04fd5458c. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:44:47+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 8e808bc587433. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:47:15+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: d1834d61ed6f7. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:47:45+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 5cda51afa71a2. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:52:54+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 26102689851d8. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:56:19+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: f552e8e1b2a58. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T20:56:54+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: f48c2478e2918. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:00:59+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: da69c3c432456. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:01:30+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: c1d3f322d0572. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:05:40+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 8b6a029cb6ca9. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:16:25+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: d01d7f2aa0107. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:18:56+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 56cf44c1497f3. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-16T21:22:27+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 153bf48dc9269. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T01:48:15+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: de9334d6aecce. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T01:48:49+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: d640e0229d0a2. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T01:54:45+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 9a4c07a7c9c8b. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:00:02+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: bc102b9d9919c. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:03:06+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: ee192a7e5fde4. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:04:27+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: The field Shipping Address Postal Code is required (#10730: Shipping Address Postal Code Empty). Correlation ID: 5154fca684447. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:08:51+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: A match of the Shipping Address City, State, and Postal Code failed (#10736: Shipping Address Invalid City State Postal Code). Correlation ID: 35c5a142caa6c. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:11:18+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: A match of the Shipping Address City, State, and Postal Code failed (#10736: Shipping Address Invalid City State Postal Code). Correlation ID: 1c99a51836fad. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T02:12:23+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: A match of the Shipping Address City, State, and Postal Code failed (#10736: Shipping Address Invalid City State Postal Code). Correlation ID: 8bf336a773c86. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-17T05:19:03+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'PayPal NVP gateway errors: A match of the Shipping Address City, State, and Postal Code failed (#10736: Shipping Address Invalid City State Postal Code). Correlation ID: 928ac12a6197f. Version: 72.0.' in /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php:1062
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(1008): Mage_Paypal_Model_Api_Nvp->_handleCallErrors(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Api/Nvp.php(616): Mage_Paypal_Model_Api_Nvp->call('SetExpressCheck...', Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Model/Express/Checkout.php(381): Mage_Paypal_Model_Api_Nvp->callSetExpressCheckout()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Paypal/Controller/Express/Abstract.php(108): Mage_Paypal_Model_Express_Checkout->start('http://www.port...', 'http://www.port...', false)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Paypal_Controller_Express_Abstract->startAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('start')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-20T07:04:43+00:00 ERR (3): 
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /www/web/portaldogame/public_html/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /www/web/portaldogame/public_html/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /www/web/portaldogame/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /www/web/portaldogame/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#4 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `attr_ta...', Array)
+#5 /www/web/portaldogame/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(504): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `attr_ta...', Array)
+#6 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(737): Varien_Db_Adapter_Pdo_Mysql->query(Object(Varien_Db_Select), Array)
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Eav/Model/Entity/Abstract.php(996): Zend_Db_Adapter_Abstract->fetchAll(Object(Varien_Db_Select))
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Eav/Model/Entity/Abstract.php(959): Mage_Eav_Model_Entity_Abstract->_loadModelAttributes(Object(Mage_Catalog_Model_Product))
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Model/Resource/Abstract.php(698): Mage_Eav_Model_Entity_Abstract->load(Object(Mage_Catalog_Model_Product), 8, NULL)
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Abstract.php(225): Mage_Catalog_Model_Resource_Abstract->load(Object(Mage_Catalog_Model_Product), 8, NULL)
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Helper/Product.php(318): Mage_Core_Model_Abstract->load(8)
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Helper/Product/View.php(121): Mage_Catalog_Helper_Product->initProduct(8, Object(Mage_Catalog_ProductController), Object(Varien_Object))
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/controllers/ProductController.php(132): Mage_Catalog_Helper_Product_View->prepareAndRender(8, Object(Mage_Catalog_ProductController), Object(Varien_Object))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Catalog_ProductController->viewAction()
+#15 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('view')
+#16 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#17 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#18 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#19 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#20 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away, query was: SELECT `attr_table`.* FROM `magento_catalog_product_entity_varchar` AS `attr_table`
+ INNER JOIN `magento_eav_entity_attribute` AS `set_table` ON attr_table.attribute_id = set_table.attribute_id AND set_table.attribute_set_id = '11' WHERE (attr_table.entity_id = '8') AND (attr_table.store_id IN (0, 6)) UNION ALL SELECT `attr_table`.* FROM `magento_catalog_product_entity_decimal` AS `attr_table`
+ INNER JOIN `magento_eav_entity_attribute` AS `set_table` ON attr_table.attribute_id = set_table.attribute_id AND set_table.attribute_set_id = '11' WHERE (attr_table.entity_id = '8') AND (attr_table.store_id IN (0, 6)) UNION ALL SELECT `attr_table`.* FROM `magento_catalog_product_entity_int` AS `attr_table`
+ INNER JOIN `magento_eav_entity_attribute` AS `set_table` ON attr_table.attribute_id = set_table.attribute_id AND set_table.attribute_set_id = '11' WHERE (attr_table.entity_id = '8') AND (attr_table.store_id IN (0, 6)) UNION ALL SELECT `attr_table`.* FROM `magento_catalog_product_entity_text` AS `attr_table`
+ INNER JOIN `magento_eav_entity_attribute` AS `set_table` ON attr_table.attribute_id = set_table.attribute_id AND set_table.attribute_set_id = '11' WHERE (attr_table.entity_id = '8') AND (attr_table.store_id IN (0, 6)) UNION ALL SELECT `attr_table`.* FROM `magento_catalog_product_entity_datetime` AS `attr_table`
+ INNER JOIN `magento_eav_entity_attribute` AS `set_table` ON attr_table.attribute_id = set_table.attribute_id AND set_table.attribute_set_id = '11' WHERE (attr_table.entity_id = '8') AND (attr_table.store_id IN (0, 6)) ORDER BY `store_id` ASC' in /www/web/portaldogame/public_html/lib/Zend/Db/Statement/Pdo.php:235
+Stack trace:
+#0 /www/web/portaldogame/public_html/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#2 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#3 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `attr_ta...', Array)
+#4 /www/web/portaldogame/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(504): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `attr_ta...', Array)
+#5 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(737): Varien_Db_Adapter_Pdo_Mysql->query(Object(Varien_Db_Select), Array)
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Eav/Model/Entity/Abstract.php(996): Zend_Db_Adapter_Abstract->fetchAll(Object(Varien_Db_Select))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Eav/Model/Entity/Abstract.php(959): Mage_Eav_Model_Entity_Abstract->_loadModelAttributes(Object(Mage_Catalog_Model_Product))
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Model/Resource/Abstract.php(698): Mage_Eav_Model_Entity_Abstract->load(Object(Mage_Catalog_Model_Product), 8, NULL)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Abstract.php(225): Mage_Catalog_Model_Resource_Abstract->load(Object(Mage_Catalog_Model_Product), 8, NULL)
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Helper/Product.php(318): Mage_Core_Model_Abstract->load(8)
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/Helper/Product/View.php(121): Mage_Catalog_Helper_Product->initProduct(8, Object(Mage_Catalog_ProductController), Object(Varien_Object))
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Catalog/controllers/ProductController.php(132): Mage_Catalog_Helper_Product_View->prepareAndRender(8, Object(Mage_Catalog_ProductController), Object(Varien_Object))
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Catalog_ProductController->viewAction()
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('view')
+#15 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#16 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#17 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#18 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#19 {main}
+2016-04-20T07:04:44+00:00 ERR (3): 
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php:307
+Stack trace:
+#0 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(307): PDO->beginTransaction()
+#1 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(496): Zend_Db_Adapter_Pdo_Abstract->_beginTransaction()
+#2 /www/web/portaldogame/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(234): Zend_Db_Adapter_Abstract->beginTransaction()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Resource/Abstract.php(76): Varien_Db_Adapter_Pdo_Mysql->beginTransaction()
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Abstract.php(313): Mage_Core_Model_Resource_Abstract->beginTransaction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Log/Model/Visitor.php(237): Mage_Core_Model_Abstract->save()
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Log_Model_Visitor->saveByRequest(Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Log_Model_Visitor), 'saveByRequest', Object(Varien_Event_Observer))
+#8 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('controller_acti...', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(551): Mage::dispatchEvent('controller_acti...', Array)
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Front/Action.php(80): Mage_Core_Controller_Varien_Action->postDispatch()
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(422): Mage_Core_Controller_Front_Action->postDispatch()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('view')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-20T07:04:44+00:00 ERR (3): 
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php:307
+Stack trace:
+#0 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Pdo/Abstract.php(307): PDO->beginTransaction()
+#1 /www/web/portaldogame/public_html/lib/Zend/Db/Adapter/Abstract.php(496): Zend_Db_Adapter_Pdo_Abstract->_beginTransaction()
+#2 /www/web/portaldogame/public_html/lib/Varien/Db/Adapter/Pdo/Mysql.php(234): Zend_Db_Adapter_Abstract->beginTransaction()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Resource/Abstract.php(76): Varien_Db_Adapter_Pdo_Mysql->beginTransaction()
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Abstract.php(313): Mage_Core_Model_Resource_Abstract->beginTransaction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Log/Model/Visitor.php(237): Mage_Core_Model_Abstract->save()
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Log_Model_Visitor->saveByRequest(Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Log_Model_Visitor), 'saveByRequest', Object(Varien_Event_Observer))
+#8 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('controller_acti...', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(551): Mage::dispatchEvent('controller_acti...', Array)
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Front/Action.php(80): Mage_Core_Controller_Varien_Action->postDispatch()
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(422): Mage_Core_Controller_Front_Action->postDispatch()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('noRoute')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T21:53:54+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('19,20')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('19,20')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T21:53:54+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('157')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('157')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T21:53:54+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('123')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('123')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T22:18:14+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('19,20')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('19,20')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T22:18:14+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('157')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('157')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-24T22:18:14+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /www/web/portaldogame/public_html/lib/Unserialize/Parser.php:59
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize('123')
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote/Item.php(503): Mage_Core_Helper_UnserializeArray->unserialize('123')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Quote.php(1759): Mage_Sales_Model_Quote_Item->compare(Object(Mage_Sales_Model_Quote_Item))
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Session.php(216): Mage_Sales_Model_Quote->merge(Object(Mage_Sales_Model_Quote))
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Checkout/Model/Observer.php(44): Mage_Checkout_Model_Session->loadCustomerQuote()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): Mage_Checkout_Model_Observer->loadCustomerQuote(Object(Varien_Event_Observer))
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Checkout_Model_Observer), 'loadCustomerQuo...', Object(Varien_Event_Observer))
+#7 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(225): Mage::dispatchEvent('customer_login', Array)
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/Model/Session.php(215): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 /www/web/portaldogame/public_html/app/code/core/Mage/Customer/controllers/AccountController.php(158): Mage_Customer_Model_Session->login('levigrandchase@...', 'salmista')
+#11 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Customer_AccountController->loginPostAction()
+#12 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('loginPost')
+#13 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-27T09:59:29+00:00 DEBUG (7): Exception message: Certifique-se de que o e-mail e token foram preenchidos.
+Trace: #0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1358): UOL_PagSeguro_Model_Observer->adminSystemConfigPaymentSave(Object(Varien_Event_Observer))
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(UOL_PagSeguro_Model_Observer), 'adminSystemConf...', Object(Varien_Event_Observer))
+#2 /www/web/portaldogame/public_html/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('admin_system_co...', Array)
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Adminhtml/controllers/System/ConfigController.php(179): Mage::dispatchEvent('admin_system_co...', Array)
+#4 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_System_ConfigController->saveAction()
+#5 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#10 {main}
+2016-04-30T11:18:17+00:00 ERR (3): 
+exception 'Exception' with message 'This letter cannot be sent.' in /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template.php:374
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template.php(508): Mage_Core_Model_Email_Template->send(Array, Array, Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template/Mailer.php(84): Mage_Core_Model_Email_Template->sendTransactional('sales_email_ord...', 'sales', Array, Array, Array, '1')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Order.php(1354): Mage_Core_Model_Email_Template_Mailer->send()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Order.php(1369): Mage_Sales_Model_Order->queueNewOrderEmail(true)
+#4 /www/web/portaldogame/public_html/app/code/community/UOL/PagSeguro/controllers/PaymentController.php(124): Mage_Sales_Model_Order->sendNewOrderEmail()
+#5 /www/web/portaldogame/public_html/app/code/community/UOL/PagSeguro/controllers/PaymentController.php(89): UOL_PagSeguro_PaymentController->sendEmail()
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): UOL_PagSeguro_PaymentController->requestAction()
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('request')
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#12 {main}
+2016-04-30T11:37:15+00:00 ERR (3): 
+exception 'Exception' with message 'This letter cannot be sent.' in /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template.php:374
+Stack trace:
+#0 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template.php(508): Mage_Core_Model_Email_Template->send(Array, Array, Array)
+#1 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/Email/Template/Mailer.php(84): Mage_Core_Model_Email_Template->sendTransactional('sales_email_ord...', 'sales', Array, Array, Array, '1')
+#2 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Order.php(1354): Mage_Core_Model_Email_Template_Mailer->send()
+#3 /www/web/portaldogame/public_html/app/code/core/Mage/Sales/Model/Order.php(1369): Mage_Sales_Model_Order->queueNewOrderEmail(true)
+#4 /www/web/portaldogame/public_html/app/code/community/UOL/PagSeguro/controllers/PaymentController.php(124): Mage_Sales_Model_Order->sendNewOrderEmail()
+#5 /www/web/portaldogame/public_html/app/code/community/UOL/PagSeguro/controllers/PaymentController.php(89): UOL_PagSeguro_PaymentController->sendEmail()
+#6 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): UOL_PagSeguro_PaymentController->requestAction()
+#7 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('request')
+#8 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#9 /www/web/portaldogame/public_html/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /www/web/portaldogame/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#11 /www/web/portaldogame/public_html/index.php(83): Mage::run('', 'store')
+#12 {main}

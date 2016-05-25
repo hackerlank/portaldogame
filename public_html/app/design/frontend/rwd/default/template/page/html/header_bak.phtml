@@ -1,0 +1,23 @@
+<header id="header" class="page-header">
+  <div class="page-header-container"> <a class="logo" href="<?php echo $this->getUrl('') ?>"> <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" /> <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" /></a>
+    <div class="store-language-container"></div>
+    <div class="skip-links"><a href="#header-nav" class="skip-link skip-nav"> <span class="icon"></span> <span class="label"><?php echo $this->__('Menu'); ?></span></a>
+      <div class="account-cart-wrapper">
+      <?php
+          Mage::getSingleton('customer/session')->setBeforeAuthUrl($this->getRequest()->getRequestUri());  //save requested URL for later redirection
+          if(!Mage::getSingleton('customer/session')->isLoggedIn()) {
+	  ?>
+      	<a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account"> <span class="icon"></span> <span class="label"><?php echo $this->__('Account'); ?></span</a> 
+	<?php }else{ ?>
+    	<?php echo $this->getChildHtml('minicart_head'); ?>
+    <?php
+		  }
+      ?>
+        <div class="header-minicart"> <?php echo $this->getChildHtml('minicart_head'); ?> </div>
+      </div>
+    </div>
+    <div id="header-nav" class="skip-content"> <?php echo $this->getChildHtml('topMenu') ?> </div>
+    <div id="header-account" class="skip-content"> <?php echo $this->getChildHtml('topLinks') ?> </div>
+  </div>
+</header>
+<?php echo $this->getChildHtml('topContainer'); ?> 

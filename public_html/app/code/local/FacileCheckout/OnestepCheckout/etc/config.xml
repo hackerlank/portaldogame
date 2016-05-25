@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <FacileCheckout_OnestepCheckout>
+            <version>2.0.10</version>
+        </FacileCheckout_OnestepCheckout>
+    </modules>
+ 
+	
+    <global>
+	
+	 <fieldsets>
+            <sales_convert_quote_address>
+                <char_name>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </char_name>
+				 <account_name>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </account_name>
+				 <account_pwd>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </account_pwd>
+				 <message>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </message>
+				 <contact>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </contact>
+				 <trade_method>
+                    <to_order_address>*</to_order_address>
+                    <to_customer_address>*</to_customer_address>
+                </trade_method>
+            </sales_convert_quote_address>
+            <customer_address>
+                <char_name>
+                    <to_quote_address>*</to_quote_address>
+                </char_name>
+				<account_name>
+                    <to_quote_address>*</to_quote_address>
+                </account_name>
+				<account_pwd>
+                    <to_quote_address>*</to_quote_address>
+                </account_pwd>
+				<message>
+                    <to_quote_address>*</to_quote_address>
+                </message>
+				<contact>
+                    <to_quote_address>*</to_quote_address>
+                </contact>
+				<trade_method>
+                    <to_quote_address>*</to_quote_address>
+                </trade_method>
+            </customer_address>
+   </fieldsets> 
+	
+        <models>
+            <onestepcheckout>
+                <class>FacileCheckout_OnestepCheckout_Model</class>
+            </onestepcheckout>
+            <onestepcheckout_adminhtml>
+                <class>FacileCheckout_OnestepCheckout_Adminhtml_Model</class>
+            </onestepcheckout_adminhtml>
+        </models>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <links>FacileCheckout_OnestepCheckout_Block_Links</links>
+                </rewrite>
+            </checkout>
+            <onestepcheckout>
+                <class>FacileCheckout_OnestepCheckout_Block</class>
+            </onestepcheckout>
+        </blocks>
+        <helpers>
+            <checkout>
+                <rewrite>
+                    <url>FacileCheckout_OnestepCheckout_Helper_Url</url>
+                </rewrite>
+            </checkout>
+            <onestepcheckout>
+                <class>FacileCheckout_OnestepCheckout_Helper</class>
+            </onestepcheckout>
+        </helpers>
+		
+		<resources>
+				<onestepcheckout_setup>
+					<setup>
+						<module>FacileCheckout_OnestepCheckout</module>
+						<class>FacileCheckout_OnestepCheckout_Model_Setup_Mysql4_Setup</class>
+					</setup>
+
+					<connection>
+						<use>core_setup</use>
+					</connection>
+				</onestepcheckout_setup>	 
+		</resources>
+			
+    </global>
+
+    <frontend>
+        <routers>
+            <onestepcheckout>
+                <use>standard</use>
+                <args>
+                    <module>FacileCheckout_OnestepCheckout</module>
+                    <frontName>onestepcheckout</frontName>
+                </args>
+            </onestepcheckout>
+        </routers>
+        <translate>
+            <modules>
+                <FacileCheckout_OnestepCheckout>
+                     <files>
+                          <default>FacileCheckout_OnestepCheckout.csv</default>
+                     </files>
+                </FacileCheckout_OnestepCheckout>
+            </modules>
+        </translate>
+        <layout>
+             <updates>
+                  <onestepcheckout>
+                        <file>onestepcheckout.xml</file>
+                  </onestepcheckout>
+             </updates>
+        </layout>
+        <events>
+             <sales_model_service_quote_submit_after>
+                <observers>
+                    <onestepcheckout>
+                        <type>model</type>
+                        <class>onestepcheckout/observer</class>
+                        <method>removeHistoryComment</method>
+                    </onestepcheckout>
+                </observers>
+            </sales_model_service_quote_submit_after>
+            <sales_model_service_quote_submit_before>
+                <observers>
+                    <onestepcheckout>
+                        <type>model</type>
+                        <class>onestepcheckout/observer</class>
+                        <method>addHistoryComment</method>
+                    </onestepcheckout>
+                </observers>
+            </sales_model_service_quote_submit_before>
+ 
+      		<controller_action_layout_render_before_checkout_cart_index>
+                <observers>
+                    <onestepcheckout>
+                        <class>onestepcheckout/observer</class>
+                        <method>setEmptyCartTemplate</method>
+                    </onestepcheckout>
+                </observers>
+            </controller_action_layout_render_before_checkout_cart_index>
+ 
+        </events>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <FacileCheckout_OnestepCheckout>
+                    <files>
+                        <default>FacileCheckout_OnestepCheckout.csv</default>
+                    </files>
+                </FacileCheckout_OnestepCheckout>
+            </modules>
+        </translate>
+		<layout>
+            <updates>
+                <onestepcheckout>
+                    <file>onestepcheckout.xml</file>
+                </onestepcheckout>
+            </updates>
+        </layout>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <onestepcheckout translate="title" module="onestepcheckout">
+                                            <title>One Step Checkout Section</title>
+                                        </onestepcheckout>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl> 
+    </adminhtml>
+
+    <default>
+        <onestepcheckout>
+            <general>
+                <enabled>0</enabled>
+                <title>One Step Checkout</title>
+                   <shipping_method>flatrate_flatrate</shipping_method>
+                          <payment_method>paypal_express</payment_method>
+                <country>US</country>
+                <guest_checkout>1</guest_checkout>
+                <shipping_address>1</shipping_address>
+                <newsletter_checkbox>1</newsletter_checkbox>
+                <comment>0</comment>
+            </general>
+            <geo_ip>
+                <country>0</country>
+                <country_file>GeoIP.dat</country_file>
+                <city>0</city>
+                <city_file>GeoLiteCity.dat</city_file>
+            </geo_ip>
+            <address_form>
+                <company>hidden</company>
+                <address>required</address>
+                <city>required</city>
+                <country>optional</country>
+                <zip>required</zip>
+                <state>required</state>
+                <phone>required</phone>
+                <fax>hidden</fax>
+            </address_form>
+            <agreements>
+                <enabled>0</enabled>
+                <output>minimal</output>
+            </agreements>
+			
+			<!-- Gift Wrap -->
+			<giftwrap>
+			<enabled>0</enabled>
+			<class>FacileCheckout_OnestepCheckout_Helper_Data</class>
+			<method>setGiftwrap</method>
+			</giftwrap>
+		   <!-- Gift Wrap -->
+		   
+		   <!-- Heard Us -->
+			<!--<heardus>
+			<enabled>0</enabled>
+			<class>FacileCheckout_OnestepCheckout_Helper_Data</class>
+			<method>setHeardus</method>
+			</heardus>-->
+			<!-- Heard Us -->
+		
+			
+        </onestepcheckout>
+    </default>
+    <admin>
+        <routers>
+            <onestepcheckout>
+                <use>admin</use>            
+                <args>
+                    <module>FacileCheckout_OnestepCheckout</module>
+                    <frontName>onestepcheckout</frontName>
+                </args>
+            </onestepcheckout>
+        </routers>
+    </admin>
+</config>

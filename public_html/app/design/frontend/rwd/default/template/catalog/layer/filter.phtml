@@ -1,0 +1,9 @@
+<ol>
+<?php foreach ($this->getItems() as $_item): ?>
+    <li>
+       <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>">
+            <?php echo $_item->getLabel() ?>
+       </a>
+    </li>
+<?php endforeach ?>
+</ol>
